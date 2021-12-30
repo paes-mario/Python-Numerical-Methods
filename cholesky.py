@@ -18,7 +18,7 @@ Sylvester's criterion states that a symmetric
 (more generally, Hermitian) matrix is positive definite
 if and only if its principal minors are all positive
 So I will check by hand if A matches the criterion
-If not, the program will return a alert'''
+If not, the program will return an alert'''
 
 #writing the functions for Sylvester's criterion
 def det_1(x):
