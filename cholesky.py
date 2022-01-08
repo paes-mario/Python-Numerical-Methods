@@ -12,12 +12,12 @@ A = [[ 16, 4, 8, 4],
      [ 4, 4, 10, 12]]
 
 
-'''First we need to verfy if A matrix is positive definite
+'''First we need to verify if matrix A is positive definite
 and I will use the Sylvester's criterion
 Sylvester's criterion states that a symmetric
 (more generally, Hermitian) matrix is positive definite
 if and only if its principal minors are all positive
-So I will check by hand if A matches the criterion
+So I will check by hand if matrix A matches the criterion
 If not, the program will return an alert'''
 
 #writing the functions for Sylvester's criterion
@@ -127,12 +127,12 @@ And include Sylvester criterion'''
 if Sylvester(A):
     Result = Cholesky(A)
     print("My Cholesky decomposition by hand is: \n", Result)
-    #Validating the result with Numpy Library
     
+    #Validating the result with Numpy Library
     import numpy as np
     
     Arr = np.array(A)
-    Answer = np.linalg.cholesky(A)
+    Answer = np.linalg.cholesky(Arr)
     
     print("Numpy answer is: \n", Answer)
     
